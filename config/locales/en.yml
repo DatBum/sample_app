@@ -32,13 +32,27 @@
 en:
   hello: "Hello world"
   maintitle: "Ruby on Rails Tutorial Sample App"
+  layouts:
+    header:
+      home: "Home"
+      help: "Help"
+      login: "Log in"
+      sampleapp: "sample app"
+    footer:
+      michael: "Michael Hartl"
+      contain1: "by"
+      about: "About"
+      contact: "Contact"
+      new: "News"
   static_pages:
     home:
       title: "Home"
-      header: "Sample App"
+      header: "Welcome to the Sample app"
       contain1: "This is the home page for the"
       contain2: "Ruby on Rails Tutorial"
       contain3: "sample application."
+      signupnow: "Sign up now!"
+      railslogo: "Rails logo"
     help:
       title: "Help"
       header: "Help"
@@ -64,3 +78,7 @@ en:
       header: "Contact"
       contain1: "Contact the Ruby on Rails Tutorial about the sample app at the"
       contain2: "contact page"
+  users:
+    new:
+      title: "Sign up"
+      contain1: "This will be a signup page for new users."

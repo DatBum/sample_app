@@ -3,3 +3,4 @@ maximum_name: 50
 minimum_password: 6
 gravatar_size: 80
 checked: 1
+size_of_gravatar: 50

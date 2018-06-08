@@ -8,4 +8,8 @@ module UsersHelper
   def check_admin? user
     return true if current_user.admin? && !current_user?(user)
   end
+
+  def check_user
+    @user ||= current_user
+  end
 end

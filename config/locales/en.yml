@@ -68,6 +68,8 @@ your password will stay as it is."
   mircopostnotdeleted: "Deleted error"
   lessthen5MB: "should be less than 5MB"
   errorpicture: "Maximum file size is 5MB. Please choose a smaller file."
+  title_following: "Following"
+  title_followers: "Followers"
   layouts:
     header:
       home: "Home"
@@ -145,6 +147,13 @@ your password will stay as it is."
       confirm: "You sure?"
     show:
       micropost: "Microposts (%{size})"
+    follow:
+      follow: "Follow"
+    unfollow:
+      unfollow: "Unfollow"
+    show_follow:
+      view: "view my profile"
+      micropost: "Microposts: %{size}"
   shared:
     error_messages:
       formcontain: "The form contains"
@@ -153,6 +162,9 @@ your password will stay as it is."
     micropost_form:
       compose: "Compose new micropost..."
       post: "Post"
+    stats:
+      following: "following"
+      followers: "followers"
   sessions:
     new:
       title: "Log in"

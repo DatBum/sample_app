@@ -28,10 +28,18 @@
 #
 # To learn more, please read the Rails Internationalization guide
 # available at http://guides.rubyonrails.org/i18n.html.
+#
+# Cach khac de thay doi label tag ma khong can dung " , t(".blahblahblah") "
+# helpers:
+#   label:
+#     user:
+#       password_confirmation: "Your body text"
 
 en:
   hello: "Hello world"
   maintitle: "Ruby on Rails Tutorial Sample App"
+  success: "Welcome to the Sample App!"
+  usernotfound: "No users found."
   layouts:
     header:
       home: "Home"
@@ -81,4 +89,11 @@ en:
   users:
     new:
       title: "Sign up"
-      contain1: "This will be a signup page for new users."
+      name: "Name"
+      email: "Email"
+      pass: "Password"
+      confirmpass: "Confirmation"
+      createaccount: "Create my account"
+  shared:
+    error_messages:
+      formcontain: "The form contains"

@@ -109,4 +109,5 @@ en:
       signupnow: "Sign up now!"
       email: "Email"
       pass: "Password"
-
+      rememberme: "Remember me on this computer"
+      newuser: "New user? "

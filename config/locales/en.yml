@@ -40,12 +40,18 @@ en:
   maintitle: "Ruby on Rails Tutorial Sample App"
   success: "Welcome to the Sample App!"
   usernotfound: "No users found."
+  invalidemail: "Invalid email/password combination"
   layouts:
     header:
       home: "Home"
       help: "Help"
       login: "Log in"
       sampleapp: "sample app"
+      user: "Users"
+      profile: "Profile"
+      setting: "Settings"
+      account: "Account"
+      logout: "Log out"
     footer:
       michael: "Michael Hartl"
       contain1: "by"
@@ -97,3 +103,10 @@ en:
   shared:
     error_messages:
       formcontain: "The form contains"
+  sessions:
+    new:
+      title: "Log in"
+      signupnow: "Sign up now!"
+      email: "Email"
+      pass: "Password"
+

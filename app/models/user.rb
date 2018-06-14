@@ -7,7 +7,8 @@ class User < ApplicationRecord
     length: {maximum: Settings.maximum_email},
     uniqueness: {case_sensitive: false}
   validates :password, presence: true,
-    length: {minimum: Settings.minimum_password}
+    length: {minimum: Settings.minimum_password},
+    allow_nil: true
   validates :name, presence: true,
     length: {maximum: Settings.maximum_name}
   before_save ->{email.downcase!}
@@ -23,7 +24,7 @@ class User < ApplicationRecord
 
   def remember
     self.remember_token = User.new_token
-    update_attributes :remember_digest, User.digest(remember_token)
+    update_attributes remember_digest: User.digest(remember_token)
   end
 
   def authenticated? remember_token

@@ -41,6 +41,11 @@ en:
   success: "Welcome to the Sample App!"
   usernotfound: "No users found."
   invalidemail: "Invalid email/password combination"
+  updated: "Profile updated"
+  pleaselogin: "Please log in."
+  invalidemail: "Invalid email/password combination"
+  userdeleted: "User deleted"
+  usernotdeleted: "Cannot delete: User not found or has been deleted"
   layouts:
     header:
       home: "Home"
@@ -95,11 +100,23 @@ en:
   users:
     new:
       title: "Sign up"
+      confirm: "Confirmation"
+      createaccount: "Create my account"
+    edit:
+      title: "Edit user"
+      header: "Update your profile"
+      saveaccount: "Save changes"
       name: "Name"
       email: "Email"
       pass: "Password"
       confirmpass: "Confirmation"
       createaccount: "Create my account"
+      contain1: "change"
+    index:
+      title: "All users"
+    user:
+      delete: "delete"
+      confirm: "You sure?"
   shared:
     error_messages:
       formcontain: "The form contains"

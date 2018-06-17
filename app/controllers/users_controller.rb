@@ -8,10 +8,12 @@ class UsersController < ApplicationController
     @user = User.new
   end
 
-  def show; end
-
   def index
-    @users = User.paginate page: params[:page]
+    @users = User.activated_user.paginate page: params[:page]
+  end
+
+  def show
+    redirect_to root_url unless @user.activated
   end
 
   def destroy
@@ -26,9 +28,9 @@ class UsersController < ApplicationController
   def create
     @user = User.new user_params
     if @user.save
-      log_in @user
-      flash[:success] = t "success"
-      redirect_to @user
+      @user.send_activation_email
+      flash[:info] = t "checkemail1"
+      redirect_to root_url
     else
       render :new
     end

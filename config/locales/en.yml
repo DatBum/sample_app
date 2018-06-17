@@ -40,7 +40,6 @@ en:
   maintitle: "Ruby on Rails Tutorial Sample App"
   success: "Welcome to the Sample App!"
   usernotfound: "No users found."
-  invalidemail: "Invalid email/password combination"
   updated: "Profile updated"
   pleaselogin: "Please log in."
   invalidemail: "Invalid email/password combination"
@@ -52,6 +51,18 @@ en:
   invalidactivate: "Invalid activation link"
   account: "Account activation"
   hi: "Hi"
+  passwordreset: "Password reset"
+  emailsent: "Email sent with password reset instructions"
+  emailnotfound: "Email address not found"
+  resetpass: "To reset your password click the link below:"
+  resetpass_contain1: "This link will expire in two hours."
+  resetpass_contain2: "If you did not request your password to be reset, please ignore this email and
+your password will stay as it is."
+  passreset: "Password reset"
+  pasreset: "Reset password"
+  successreset: "Password has been reset."
+  notempty: "can't be empty"
+  passexpired: "Password reset has expired."
   layouts:
     header:
       home: "Home"
@@ -137,9 +148,20 @@ en:
       pass: "Password"
       rememberme: "Remember me on this computer"
       newuser: "New user? "
+      forgotpass: "(forgot password)"
   user_mailer:
     account_activation:
       hi: "Hi %{name}"
       welcome: "Welcome to the Sample App! Click on the link below to activate your account:"
       title: "Sample App"
       activate: "Activate"
+  password_resets:
+    new:
+      title: "Forgot password"
+      email: "Email"
+      submit: "Submit"
+    edit:
+      title: "Reset password"
+      pass: "Password"
+      confirmpass: "Confirmation"
+      update: "Update password"

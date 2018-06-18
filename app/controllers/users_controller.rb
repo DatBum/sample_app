@@ -48,6 +48,18 @@ class UsersController < ApplicationController
     end
   end
 
+  def following
+    @title = t "title_following"
+    @users = @user.following.paginate(page: params[:page])
+    render "show_follow"
+  end
+
+  def followers
+    @title = t "title_followers"
+    @users = @user.followers.paginate(page: params[:page])
+    render "show_follow"
+  end
+
   private
 
   def user_params

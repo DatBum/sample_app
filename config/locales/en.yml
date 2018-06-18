@@ -63,6 +63,11 @@ your password will stay as it is."
   successreset: "Password has been reset."
   notempty: "can't be empty"
   passexpired: "Password reset has expired."
+  mircopostcreated: "Micropost created!"
+  mircopostdeleted: "Micropost deleted"
+  mircopostnotdeleted: "Deleted error"
+  lessthen5MB: "should be less than 5MB"
+  errorpicture: "Maximum file size is 5MB. Please choose a smaller file."
   layouts:
     header:
       home: "Home"
@@ -89,6 +94,7 @@ your password will stay as it is."
       contain3: "sample application."
       signupnow: "Sign up now!"
       railslogo: "Rails logo"
+      micropost: "Micropost Feed"
     help:
       title: "Help"
       header: "Help"
@@ -137,9 +143,16 @@ your password will stay as it is."
     user:
       delete: "delete"
       confirm: "You sure?"
+    show:
+      micropost: "Microposts (%{size})"
   shared:
     error_messages:
       formcontain: "The form contains"
+    user_info:
+      view: "view my profile"
+    micropost_form:
+      compose: "Compose new micropost..."
+      post: "Post"
   sessions:
     new:
       title: "Log in"
@@ -165,3 +178,9 @@ your password will stay as it is."
       pass: "Password"
       confirmpass: "Confirmation"
       update: "Update password"
+  microposts:
+    micropost:
+      contain1: "Posted"
+      contain2: "ago."
+      delete: "delete"
+      confirm: "You sure?"

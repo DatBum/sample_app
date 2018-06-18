@@ -18,6 +18,7 @@ gem "jbuilder",                "2.7.0"
 gem "rubocop", "~> 0.49.1", require: false
 gem "config"
 gem "figaro"
+gem "i18n-js"
 
 group :development, :test do
   gem "sqlite3", "1.3.13"
